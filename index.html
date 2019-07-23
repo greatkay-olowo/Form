@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PRACTICE">
+    <meta name="author" content="Alao Kayode">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noticia+Text|Shadows+Into+Light&display=swap" rel="stylesheet">
+    
+    <style>
+        .header-font {
+        font-family: 'Fjalla One', sans-serif;
+        }
+        
+        body {
+        font-family: 'Noticia Text', serif;
+        background-color: #837c7c;
+        }
+        
+        .jumbotron {
+        padding: 20px 0;
+        }
+        
+        .footer-font {
+        font-family: 'Noticia Text', serif;
+        }
+
+    </style>
+
+    <title>SURVEY FORMS</title>
+</head>
+
+<body >
+
+    <div class="jumbotron" >
+        <div class="header-font">
+            <h1 class=" text-center ">Rate My Website</h1>
+            <p class="text-center">Your input really matter to me.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <fieldset>
+            <form  action="#" method="post" class="col-lg-12 form-horizontal well">
+               
+                <div class="row">
+                    <div class="form-group has-feedback">
+                        <label for="text" class="col-lg-2 control-label" >Full Name</label>
+                        <div class="col-lg-10">
+                            <input  id="text" class="form-control" type="text" placeholder="What's your full name?" required />
+                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group has-feedback">
+                        <label for="email" class="col-lg-2 control-label" >Email</label>
+                        <div class="col-lg-10">
+                            <input  id="email" class="form-control" type="email" placeholder="Email goes here" required />
+                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group has-feedback">
+                        <label for="tel" class="col-lg-2 control-label" >Phone Number</label>
+                        <div class="col-lg-10">
+                            <input  id="tel" class="form-control" type="tel" placeholder="I will not call you by 1 am. I promise." required />
+                            <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group">
+                        <label for="checkbox" class="col-lg-2 control-label" >Gender</label>
+                        <div class="col-lg-10">
+                            <div class="radio">
+                                <label for="gender" class="radio">
+                                <input type="radio" name="origin" value="gender" id="gender">
+                                    Male
+                                </label>
+                            </div>
+                            
+                            <div class="radio">
+                                <label for="gender" class="radio">
+                                <input type="radio" name="origin" value="gender" id="gender">
+                                    female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+                
+                
+                
+                <div class="row">
+                    <div class="form-group">
+                        <label for="checkbox" class="col-lg-2 control-label" >Rate Me</label>
+                        <div class="col-lg-10">
+    
+                            <div class="checkbox-inline">
+                                <label for="friend" class="checkbox">
+                                    <input type="checkbox" name="origin" value="Good" class="checkbox">
+                                        Good
+                                </label>
+                            </div>
+                            
+                            <div class="checkbox-inline">
+                                <label for="friend" class="checkbox">
+                                    <input type="checkbox" name="origin" value="Good" class="checkbox">
+                                        Better
+                                </label>
+                            </div>
+                            
+                           <div class="checkbox-inline">
+                                <label for="friend" class="checkbox">
+                                    <input type="checkbox" name="origin" value="Good" class="checkbox">
+                                        Fantastic
+                                </label>
+                            </div>
+                            
+                                                      
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="select" class="col-lg-2 control-label" >Which of the programming languages do you know best?</label>
+                        <div id="select" class="col-lg-10">
+                            <select class="form-control" >
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="PHP">PHP</option>
+                                <option value="MySQL">MySQL</option>
+                                <option value="Java">Java</option>
+                                <option value="VB.NET">VB.NET</option>
+                                <option value="Python">Python</option>
+                                <option value="None">None</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>              
+                    </div>
+                </div>
+
+               
+               
+                <div class="row">
+                    <div class="form-group has-feedback">
+                        <label for="rextarea" class="col-lg-2 control-label" >Message</label>
+                        <div class="col-lg-10">
+                            <textarea  id="textarea" class="form-control" type="textarea" placeholder="Type your message here"></textarea>
+                            <p class="help-block">Drag the corner to make the window larger</p>
+                        </div>
+                    </div>
+                </div>               
+               
+
+                <button type="submit" class="col-lg-offset-2 btn btn-primary"><span class="glyphicon glyphicon-ok-sign"></span> SUBMIT</button>
+
+            </form>
+        </fieldset>        
+    </div>
+    
+<footer class="modal-footer">
+    <p class="footer-font">&copy; Kayode Alao (2019)</p>
+</footer>
+</body>
